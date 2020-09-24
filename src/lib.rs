@@ -7,6 +7,7 @@
 // except according to those terms.
 
 #![deny(missing_docs)]
+#![forbid(unsafe_code)]
 
 //! This crate defines the `StructOpt` trait and its custom derive.
 //!
@@ -87,9 +88,9 @@
 //!     #[structopt(short)]
 //!     out_type: String,
 //!
-//!     /// File name: only required when `out` is set to `file`
-//!     #[structopt(name = "FILE", required_if("out_type", "file"))]
-//!     file_name: String,
+//!     /// File name: only required when `out-type` is set to `file`
+//!     #[structopt(name = "FILE", required_if("out-type", "file"))]
+//!     file_name: Option<String>,
 //! }
 //!
 //! fn main() {
@@ -280,7 +281,7 @@
 //!     Usable only on field-level.
 //!
 //! - [`rename_all`](#specifying-argument-types):
-//!     [`rename_all = "kebab"/"snake"/"screaming-snake"/"camel"/"pascal"/"verbatim"]`
+//!     [`rename_all = "kebab"/"snake"/"screaming-snake"/"camel"/"pascal"/"verbatim"/"lower"/"upper"]`
 //!
 //!     Usable both on top level and field level.
 //!
@@ -309,7 +310,7 @@
 //!     Usable only on field-level.
 //!
 //! - [`rename_all_env`](##auto-deriving-environment-variables):
-//!     [`rename_all_env = "kebab"/"snake"/"screaming-snake"/"camel"/"pascal"/"verbatim"]`
+//!     [`rename_all_env = "kebab"/"snake"/"screaming-snake"/"camel"/"pascal"/"verbatim"/"lower"/"upper"]`
 //!
 //!     Usable both on top level and field level.
 //!
@@ -1063,6 +1064,8 @@ use std::ffi::OsString;
 
 /// Re-exports
 pub use clap;
+#[cfg(feature = "paw")]
+pub use paw_dep as paw;
 
 /// **This is NOT PUBLIC API**.
 #[doc(hidden)]
