@@ -1,3 +1,27 @@
+# v0.3.18 (2020-09-23)
+
+* Unsafe code [has been forbidden](https://github.com/TeXitoi/structopt/issues/432). This makes
+  [`cargo geiger`](https://github.com/rust-secure-code/cargo-geiger) list structopt as "safe".
+  Maybe it will help somebody trying to locate a bug in their dependency tree.
+
+# v0.3.17 (2020-08-25)
+
+* Fixed [a breakage](https://github.com/TeXitoi/structopt/issues/424) with resent rustc versions
+  due to `quote_spanned` misuse.
+
+# v0.3.16 (2020-08-05)
+
+* Added [the new example](https://github.com/TeXitoi/structopt/blob/master/examples/required_if.rs).
+* Allow `#[structopt(flatten)]` fields to have doc comments. The comments are ignored.
+* The `paw` crate is now being reexported when `paw` feature is enabled,
+  see [`#407`](https://github.com/TeXitoi/structopt/issues/407).
+
+# v0.3.15 (2020-06-16)
+
+* Minor documentation improvements.
+* Fixed [a latent bug](https://github.com/TeXitoi/structopt/pull/398),
+  courtesy of [@Aaron1011](https://github.com/Aaron1011).
+
 # v0.3.14 (2020-04-22)
 
 * Minor documentation improvements.
