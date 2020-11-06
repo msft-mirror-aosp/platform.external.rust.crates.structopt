@@ -19,7 +19,7 @@ struct Opt {
 
 fn main() {
     // generate `bash` completions in "target" directory
-    Opt::clap().gen_completions(env!("CARGO_PKG_NAME"), Shell::Bash, "target");
+    Opt::clap().gen_completions("structopt", Shell::Bash, "target");
 
     let opt = Opt::from_args();
     println!("{:?}", opt);
