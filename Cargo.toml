@@ -13,7 +13,7 @@
 [package]
 edition = "2018"
 name = "structopt"
-version = "0.3.20"
+version = "0.3.21"
 authors = ["Guillaume Pinot <texitoi@texitoi.eu>", "others"]
 description = "Parse command line argument by defining a struct."
 documentation = "https://docs.rs/structopt"
@@ -35,7 +35,7 @@ optional = true
 package = "paw"
 
 [dependencies.structopt-derive]
-version = "=0.4.13"
+version = "=0.4.14"
 [dev-dependencies.rustversion]
 version = "1"
 
