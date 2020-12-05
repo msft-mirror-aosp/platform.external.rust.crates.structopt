@@ -27,10 +27,10 @@ rust_library {
 //   proc-macro2-1.0.24 "default,proc-macro"
 //   quote-1.0.7 "default,proc-macro"
 //   strsim-0.8.0
-//   structopt-derive-0.4.13
-//   syn-1.0.48 "clone-impls,default,derive,full,parsing,printing,proc-macro,quote,visit"
+//   structopt-derive-0.4.14
+//   syn-1.0.53 "clone-impls,default,derive,full,parsing,printing,proc-macro,quote,visit"
 //   textwrap-0.11.0
-//   unicode-segmentation-1.6.0
+//   unicode-segmentation-1.7.1
 //   unicode-width-0.1.8 "default"
 //   unicode-xid-0.2.1 "default"
 //   vec_map-0.8.2
