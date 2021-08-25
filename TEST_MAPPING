@@ -3,6 +3,15 @@
   "presubmit": [
     {
       "name": "authfs_device_test_src_lib"
+    },
+    {
+      "name": "base64_device_test_tests_decode"
+    },
+    {
+      "name": "base64_device_test_tests_encode"
+    },
+    {
+      "name": "base64_device_test_tests_helpers"
     }
   ]
 }
