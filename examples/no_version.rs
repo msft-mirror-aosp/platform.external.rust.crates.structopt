@@ -1,15 +1,4 @@
 //! How to completely remove version.
-//!
-//! Running this example with --help prints this message:
-//! -----------------------------------------------------
-//! no_version
-//!
-//! USAGE:
-//!     no_version
-//!
-//! FLAGS:
-//!     -h, --help    Prints help information
-//! -----------------------------------------------------
 
 use structopt::clap::AppSettings;
 use structopt::StructOpt;
