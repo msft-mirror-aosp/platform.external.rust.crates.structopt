@@ -47,7 +47,7 @@ rust_library {
     edition: "2018",
     features: ["default"],
     rustlibs: [
-        "libclap",
+        "libclap_deprecated",
         "liblazy_static",
     ],
     proc_macros: ["libstructopt_derive"],
